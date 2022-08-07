@@ -29,6 +29,8 @@
             </div>
         </form>
     </div>
+    
+       <a href="album"><button>Clique aqui para ver o album online!</button></a>
 
     <?php
 
