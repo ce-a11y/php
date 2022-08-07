@@ -16,6 +16,7 @@
     <div class="container">
         <form class="m-3" method="POST" enctype="multipart/form-data">
             <h1 class="mt-5 text-center">Upload de arquivos</h1>
+            <h2 class="mt-4 txt-center">Envie uma imagem JPG</h2>
             <br><br>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -47,7 +48,7 @@
     // Validações
 
     $tamanhoMax = 2097152;
-    $permitido = ["jpg", "png", "jpeg", "mp4"];
+    $permitido = ["jpg"];
     $entensao = pathinfo($_FILES["arquivo"]["name"]);
 //    var_dump($entensao);
     //    echo $entensao['extension'];
