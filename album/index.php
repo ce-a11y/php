@@ -6,8 +6,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
-    <?php include_once 'teste.php';    ?>
-    <title>Album example for Bootstrap</title>
+    <?php include 'teste.php';    ?>
+    <title>Exemplo de galeria online!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -58,12 +58,20 @@
 
       <section class="jumbotron text-center">
         <div class="container">
-          <h1 class="jumbotron-heading">Album example</h1>
-          <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-          </p>
+        <form class="m-3" method="POST" enctype="multipart/form-data">
+            <h1 class="mt-5 text-center">Upe aqui sua imagem!</h1>
+            <br><br>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button class="btn btn-primary" type="submit" name="enviar" id="enviar">Enviar</button>
+                </div>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="arquivo" name="arquivo" aria-describedby="arquivo" required>
+                    <label class="custom-file-label" for="inputGroupFile03">Escolher arquivo</label>
+                </div>
+            </div>
+            <?php include_once 'validacao-upload.php'; ?>
+        </form>
         </div>
       </section>
 
