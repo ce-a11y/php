@@ -1,15 +1,17 @@
 <?php
+ $endereco = 'upload';
+     
+ $fotos = [
+    "$endereco/1.jpg",
+    "$endereco/2.jpg",
+    "$endereco/3.jpg",
+    "$endereco/4.jpg",
+    "$endereco/5.jpg",
+    "$endereco/6.jpg",
+    "$endereco/7.jpg",
+    "$endereco/8.jpg",
+    "$endereco/9.jpg",
 
-$fotos = [
-    '../upload/1.jpg',
-    '../upload/2.jpg',
-    '../upload/3.jpg',
-    '../upload/4.jpg',
-    '../upload/5.jpg',
-    '../upload/6.jpg',
-    '../upload/7.jpg',
-    '../upload/8.jpg',
-    '../upload/9.jpg',
 ]
 
 
